@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styles/stylesA.css" />
+    <script src="./script/consumo.js"></script>
+    <script src="./script/security.js"></script>
+    <script src="./script/config.js"></script>
+  </head>
+  <body>
+    <div class="administrador">
+      <title>Florens Administracion</title>
+      <div class="div">
+        <div class="overlap">
+          <img class="marca-UTPL" src="img/utpl.png" />
+          <button type="button" onclick="logout();">
+            <img class="carbon-user-avatar" src="img/logo2.png" />
+          </button>
+          <div class="text-wrapper">Florens Administración</div>
+        </div>
+        
+
+
+        <button class="NB" onclick="window.location='./administrador_Nece.html'">Necesidades Basicas</button>
+        <img class="la-user-nurse" src="img/1.png" />
+
+        <button class="PF" onclick="window.location='./administrador_Patro.html'">Patrones Funcionales</button> 
+        <img class="carbon-deployment" src="img/2.png" />
+
+        <button class="DN" onclick="window.location='./administrador_Dominios.html'">Dominios NANDA</button>
+        <img class="bx-book-add" src="img/3.png" />
+
+        <button class="BR" onclick="window.location='./administrador_Biblio.html'">Bibliografia Relacionada</button>
+        <img class="octicon-book" src="img/4.png" />
+
+
+
+        <div class="overlap-group-2" id="Necesidades">
+          <h3>Lista de Necesidades</h3>
+          <div class="cuadroDividido">
+            <div id="NecesidadesList">
+
+            </div>
+          </div>
+          <div class="overlap-4">
+           <button class="CR" onclick="limpiarNece()">Cancelar</button>
+          </div>
+
+          <div class="overlap-5">
+          <button onclick="GuardarNece()" class="CR" id="btnGuardarNece" disabled>Guardar</button>
+          </div>
+         
+          <div class="overlap-6">
+            <h3 class="text-Title">Título</h3>
+            <textarea type="text" value="" class="rectangle-7" id="txtTituloNece" disabled></textarea>
+            <h3 class="text-Title">Definición</h3>
+            <textarea type="text" value="" class="rectangle-7" id="txtDefinicionNece" disabled></textarea>
+            <h3 class="text-Title">Objetivos</h3>
+            <textarea type="text" value="" class="rectangle-7" id="txtObjetivosNece" disabled></textarea>
+            <h3 class="text-Title">Afecciones Derivadas</h3>
+            <textarea type="text" value="" class="rectangle-7" id="txtAfeccionesNece" disabled></textarea>
+            <h3 class="text-Title">Cuidados por Aplicar</h3>
+            <textarea type="text" value="" class="rectangle-7" id="txtCuidadosNece"disabled></textarea>
+              
+          </div>
+        </div>
+        <div class="text-wrapper-11">Administración de Información</div>
+       
+      </div>
+    </div>
+  </body>
+</html>
