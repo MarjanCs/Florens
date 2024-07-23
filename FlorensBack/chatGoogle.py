@@ -9,7 +9,7 @@ model = genai.GenerativeModel('gemini-pro')
 chat = model.start_chat(history=[])
 chat
 
-response = chat.send_message("Que es react native", stream=True)
+response = chat.send_message("Que recomendaciones darias para estudiantes de enfermeria", stream=True)
 for chunk in response:
   print(chunk.text)
 print("*/*"*80)
